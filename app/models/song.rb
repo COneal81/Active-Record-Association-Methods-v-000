@@ -3,11 +3,13 @@ class Song < ActiveRecord::Base
   belongs_to :genre
 
   def get_genre_name
-    # binding.pry
+    
     self.genre.name
   end
 
   def drake_made_this
+    binding.pry
     # when this method is called it should assign the song's artist to Drake
+    self.artist
   end
 end
